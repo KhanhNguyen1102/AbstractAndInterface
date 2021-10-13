@@ -9,7 +9,7 @@ public class ProductManager {
         listProduct = createListProduct();
         input(listProduct);
         output(listProduct);
-        totalPriceProduct(listProduct);
+        System.out.println(totalPriceProduct(listProduct));
         findProduct(listProduct);
         editProduct(listProduct);
         deleteProduct(listProduct);
