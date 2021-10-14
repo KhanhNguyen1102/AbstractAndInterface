@@ -1,6 +1,6 @@
 package resizeable;
 
-import animal.Animal;
+
 
 public class ResizeableTest {
     public static void main(String[] args) {
@@ -23,8 +23,9 @@ public class ResizeableTest {
                 resizeable.resize(random);
             }
             if (shape instanceof Square){
-                Resizeable resizeable = (Square) shape;
-                resizeable.resize(random);
+                Square square1 = (Square) shape;
+                square1.resize(random);
+                square1.howToColor();
             }
         }
         System.out.println("Mảng các hình sau khi resize");

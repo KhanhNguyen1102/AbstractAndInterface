@@ -1,6 +1,6 @@
 package resizeable;
 
-public class Square extends Shape implements Resizeable{
+public class Square extends Shape implements Resizeable,Colorable{
     private double side = 1.0;
 
 
@@ -35,6 +35,9 @@ public class Square extends Shape implements Resizeable{
     public void resize(double percent){
         setSide(getSide()+(getSide()*percent/100));
     }
+    public void howToColor(){
+        System.out.println("Color all four sides");
+    }
     @Override
     public String toString() {
         return "A Square with side="
@@ -42,4 +45,5 @@ public class Square extends Shape implements Resizeable{
                 + ", which is a subclass of "
                 + super.toString();
     }
+
 }
